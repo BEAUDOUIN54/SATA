@@ -1,0 +1,28 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+@media all and (max-width: 1150px) {
+  #bloc_page {
+    width: auto;
+  }
+}
+
+html, body {
+  font-size: 62.5%;
+  /*height: 100%;*/
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box; box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgb(106, 102, 103);
+  margin-top:50px;
+}
