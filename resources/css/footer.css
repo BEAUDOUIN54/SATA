@@ -1,0 +1,29 @@
+#footer {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    background-color: rgb(116, 113, 108);
+    /*display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    */
+    /*position: absolute;*/
+    height: 60px;
+    display: table-row;
+    bottom: 0;
+    flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.mail, .adresse {
+    font-size: 2.5rem;
+    color: white;
+}
+  
+  

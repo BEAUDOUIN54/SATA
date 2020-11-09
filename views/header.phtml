@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Sat@,Sata Contact,sata-system,sata-alarme,alarme">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
@@ -11,12 +12,43 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="../resources/css/style.css" />
-  <title>Leboncoin de la Préhistoire</title>
+  <link rel="stylesheet" href="../resources/css/header.css" />
+  <link rel="stylesheet" href="../resources/css/footer.css" />
+  <title>SATA SARL Lunéville</title>
+
+
+  
+    <link rel="icon" href="wpimages/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="wpimages/favicon.ico" type="image/x-icon">
+ 
+
+
 </head>
+
+
+
 
 <body>
 
   <header id="header">
 
+ 
+  <div><a href="#"><img src="../resources/img/logo4.png" class="logo" alt="logo" title="logo"></a></div>
+ 
   
+  <?php
+    if (!isset($_SESSION['identification'])) {
+    ?>
+
+      <div class="identification">
+        <a href="../controllers/signUp.php" target="_blank">Inscription</a>
+      </div>
+
+      <div class="identification">
+        <a href="../controllers/signIn.php" target="_blank">Connexion</a>
+      </div>
+    <?php
+    }
+    ?>
+
   </header>

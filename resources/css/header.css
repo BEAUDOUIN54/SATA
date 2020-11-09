@@ -1,0 +1,150 @@
+/* début NAVBAR */
+#header {
+    top: 0;
+    width: 100%;
+    height: 60px;
+    min-height: 60px;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(116, 113, 108);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+  }
+
+.logo {
+  width: 42px;
+	height: auto;
+}
+
+
+.identification {
+  width: 10%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  border-style: ridge;
+  border-color: rgb(106, 102, 103);
+  font-size: 2rem;
+}
+
+.identification a {
+  text-decoration: none;
+  color: black;
+}
+
+.identification:hover {
+  background-color: rgb(106, 102, 103);
+}
+
+.identification a:hover {
+  color: white;
+}
+
+.ident {
+  border: none;
+}
+
+@media all and (max-width: 1000px) {
+  .identification {
+    font-size: 1.5rem;
+    width: 15%;
+  }
+}
+
+
+
+
+
+  
+  .search {
+    width: 40%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    border-style: ridge;
+    border-color: rgb(106, 102, 103);
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .input {
+    width: 55%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    border-style: ridge;
+    border-color: rgb(106, 102, 103);
+    font-size: 1.5rem;
+  }
+  
+  @media all and (max-width: 950px) {
+    .input {
+      width: 35%;
+      font-size: 1rem;
+    }
+  }
+  
+  @media all and (max-width: 800px) {
+    .input {
+      width: 35%;
+      font-size: 1rem;
+    }
+  }
+  
+  .search:hover {
+    background-color: rgb(106, 102, 103);
+  }
+  
+  .search:hover {
+    color: white;
+  }
+  
+  .fa-search {
+    color: black;
+  }
+  
+  .fa-search:hover {
+    color: white;
+  }
+  
+  @media all and (max-width: 950px) {
+    .search {
+      font-size: 1.5rem;
+    }
+  }
+  
+  h2 {
+    font-size: 2rem;
+    /*color:white;*/
+  }
+  
+  @media all and (max-width: 1150px) {
+    .h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  
+  .fa-shopping-cart {
+    color: white;
+    font-size: 200%;
+    margin-right: 20px;
+  }
+  /* fin NAVBAR */
+  
