@@ -1,0 +1,20 @@
+<?php include '../views/header.phtml'; ?>
+
+<main2 class="form-style-1">
+<h1>Connexion</h1>
+<form action="../controllers/signIn.php" method="POST">
+    <div class="section"><span>1</span>Pseudo</div>
+    <div class="inner-wrap">
+        <label>Votre Pseudo <textarea type="email" name="username" required></textarea></label>
+    </div>
+    <div class="section"><span>2</span>Mot de passe</div>
+        <div class="inner-wrap">
+        <label>Votre mot de passe <input type="password" name="password" required/></label>
+    </div>
+    <div class="button-section">
+     <input type="submit" name="signUp" />
+    </div>
+</form>
+</main2>
+
+<?php include '../views/footer.phtml'; ?>

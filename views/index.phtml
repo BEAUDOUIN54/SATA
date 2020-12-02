@@ -1,9 +1,74 @@
 <?php require '../views/header.phtml'; ?>
 
   <body>
-    <section>
+    <section id="main">
 
 
+    <div id="mySidebar" class="sidebar">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<formul class="form-style-10">
+    <h1>Inscription</h1>
+    <form action="../controllers/signUp.php" method="POST">
+     
+      <div class="section"><span>1</span>Email</div>
+      <div class="inner-wrap">
+        <label>Votre Email<input type="email" name="email" value="<?php echo isset($_GET['email'])?$_GET['email']:'' ?>" required /></label>
+      </div>
+
+      <div class="section"><span>2</span>Pseudo</div>
+      <div class="inner-wrap">
+        <label>Votre Pseudo <input type="text" name="pseudo" value="<?php echo isset($_GET['pseudo'])?$_GET['pseudo']:'' ?>" required></input></label>
+      </div>
+
+      <div class="section"><span>3</span>Mot de passe</div>
+      <?php if (isset($_GET['error']) && $_GET['error'] == 'passwordmatch'){ ?>
+        <script>alert ('Les mots de passe ne correspondent pas');</script>
+      <?php } ?>
+      <div class="inner-wrap">
+        <label>Votre mot de passe <input type="password" name="password" required /></label>
+        <label>Confirmez votre mot de passe <input type="password" name="passwordconfirm" required /></label>
+      </div>
+
+      <span class="privacy-policy">
+        <input type="checkbox" name="field7" class="field"/>&emsp;J'accepte les <a href="../controllers/CGU.php" class="field2">Conditions Générales d'Utilisation et l'utilisation des cookies</a>
+      </span>
+
+
+
+
+
+
+
+
+<br><br><br><br>
+      <div class="button-section10">
+        <input type="submit" name="signUp" />
+      </div>
+    </form>
+</formul>
+</div>
+
+
+
+<div id="mySidebar2" class="sidebar">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+  <formul1 class="form-style-1">
+    <h1>Connexion</h1>
+      <form action="../controllers/signIn.php" method="POST">
+          <div class="section"><span>1</span>Pseudo</div>
+          <div class="inner-wrap">
+              <label>Votre Pseudo<input type="pseudo" name="username" required></label>
+          </div>
+          <div class="section"><span>2</span>Mot de passe</div>
+              <div class="inner-wrap">
+              <label>Votre mot de passe<input type="password" name="password" required/></label>
+          </div>
+          <div class="button-section">
+          <input type="submit" name="SignIn" />
+          </div>
+      </form>
+  </formul1>
+</div>
 
     <div class="wrap">
       <div><img src="../resources/img/devantureb.jpg" class="devanture" alt="devanture de la boutique SATA à Lunéville" title="devanture"></div>
@@ -29,3 +94,5 @@
 
 
 <?php require '../views/footer.phtml'; ?>
+
+

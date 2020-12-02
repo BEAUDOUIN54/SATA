@@ -11,7 +11,6 @@
     padding: 0;
     margin: 0;
     z-index: 100;
- 
   }
   
   .header ul {
@@ -52,21 +51,22 @@
     }
   }
   
+  /*
   .header li a {
-    /*border-color: rgb(106, 102, 103);
+    border-color: rgb(106, 102, 103);
     display: block;
-    padding: 20px 20px;*/
+    padding: 20px 20px;
     text-decoration: none;
     color: black;
   }
-  
+   
   .header li a:hover {
     display: block;
     padding: 20px 20px;
     text-decoration: none;
     color: white;
   }
-
+*/
 
 
 /*
@@ -95,8 +95,8 @@
 .logo {
   display: block;
   float: left;
-margin-left:50px;
-margin-top:10px;
+  margin-left:50px;
+  margin-top:10px;
 }
 
 
@@ -106,12 +106,20 @@ margin-top:10px;
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
-  display: flex;
+  /*display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: center;*/
+
 }
+
+
+  
+
+
+
+
 
 /* menu icone */
 .header .menu-icon {
@@ -147,6 +155,7 @@ margin-top:10px;
   top: -5px;
 }
 
+
 /* menu bouton */
 .header .menu-btn {
   display: none;
@@ -168,14 +177,15 @@ margin-top:10px;
   top: 0;    color: white;
 }
 
+
 /* Apparition burger menu */
 @media (min-width: 800px) {
   .header li {
     float: left;
   }
-  .header li a {
+  /*.header li a {
     padding: 20px 30px;
-  }
+  }*/
   .header .menu {
     clear: none;
     float: right;
@@ -187,8 +197,10 @@ margin-top:10px;
 }
 /* Fin MENU */
 
+
+
 .identification {
-  width: 35%;
+  width: 135%;
   height:70%;
   display: flex;
   flex-wrap: nowrap;
@@ -200,7 +212,7 @@ margin-top:10px;
   border-radius: 50px;
   border-style: ridge;
   border-color: rgb(106, 102, 103);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 /*
@@ -211,15 +223,15 @@ margin-top:10px;
 
 .identification:hover {
   background-color: rgb(106, 102, 103);
-  border: 3px solid white;
-  display: flex;
+  /* display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   border-radius: 50px;
   border-style: ridge;
-  border-color: white;
+  border-color: 3px solid rgb(192, 23, 23);*/
+  color:white;
 }
 
 /*
@@ -240,14 +252,7 @@ margin-top:10px;
 }
 */
 
-@media all and (max-width: 800px) {
-  .header .menu {
-    clear: both;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-    margin-top:80px;
-  }
-  }
+
 
 
 

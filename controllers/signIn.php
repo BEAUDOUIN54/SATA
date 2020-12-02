@@ -13,14 +13,14 @@ session_start();
 if (!empty($_POST)) {
 
     require '../models/user.php';
-    $utilisateur = getUserByEmail($_POST['username']);
+    $user = getUserByEmail($_POST['username']);
 
     //	email et mdp à vérifier s'ils existent
-    if ($utilisateur !== null and password_verify($_POST['password'], $utilisateur['hashedPassword'])) {
+    if ($user !== null and password_verify($_POST['password'], $user['hashedPassword'])) {
 
 
         //	Si l'identification est réussie…
-        $_SESSION['identification'] = intval($utilisateur['id']);
+        $_SESSION['identification'] = intval($user['id']);
 
         //	Redirection vers la page de tableau de bord
         header('Location: ../controllers/dashboardUser.php');
@@ -28,13 +28,12 @@ if (!empty($_POST)) {
 
     } else {
         //	Redirection vers la page de connexion suite à message d'erreur
-        header('Location: ../controllers/signIn.php ?error=invalid');
+        header('Location: ../controllers/signInerror.php ?error=invalid');
         exit;
     }
 }
 
 if (array_key_exists('error', $_GET)) {
-
     $errors = ['invalid' => 'adresse électronique ou mdp incorrect'];
     $errorMessage = $errors[$_GET['error']];
 }

@@ -2,7 +2,7 @@
 
 //	Connexion à la base de données
     $dbh = new PDO(
-        'mysql:host=localhost;dbname=prehistovente;charset=utf8',
+        'mysql:host=localhost;dbname=SATA;charset=utf8',
         'root',
         '',
         [

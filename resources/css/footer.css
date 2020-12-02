@@ -3,15 +3,9 @@
     padding: 0;
     margin: 0 auto;
     background-color: rgb(116, 113, 108);
-    /*display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-    */
-    /*position: absolute;*/
+    position: absolute;
     height: 60px;
-    display: table-row;
+    /*display: table-row;*/
     bottom: 0;
     flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
     display: flex;
@@ -25,5 +19,3 @@
     font-size: 2.5rem;
     color: white;
 }
-  
-  

@@ -14,13 +14,18 @@
   <link rel="stylesheet" href="../resources/css/style.css" />
   <link rel="stylesheet" href="../resources/css/header.css" />
   <link rel="stylesheet" href="../resources/css/footer.css" />
+  <link rel="stylesheet" href="../resources/css/dashboardUser.css" />
+  <link rel="stylesheet" href="../resources/css/form.css" />
+  <link rel="stylesheet" href="../resources/css/sidePanel.css" />
+  <link rel="stylesheet" href="../resources/css/signInerror.css" />
   <title>SATA SARL Lunéville</title>
 
+ 
 
-  
+  <!--
     <link rel="icon" href="wpimages/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="wpimages/favicon.ico" type="image/x-icon">
- 
+-->
 
 
 </head>
@@ -33,27 +38,28 @@
   <header class="header">
 
  
-    <div><a href="#"><img src="../resources/img/logo4.png" class="logo" alt="logo" title="logo"></a></div>
+    <div><a href="../controllers/home.php"><img src="../resources/img/logo4.png" class="logo" alt="logo" title="logo"></a></div>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 
   
     <ul class="menu">
-        
-      <?php
-      if (!isset($_SESSION['identification'])) {
-      ?>
+    <?php
+    if (!isset($_SESSION['identification'])) {
+    ?>
 
-        <li class="identification">
-          <a href="../controllers/signUp.php" target="_blank">Inscription</a>
-        </li>
+      <li>
+      <button onclick="openNav()" class="identification">Inscription</button>
+      </li>
 
-        <li class="identification">
-          <a href="../controllers/signIn.php" target="_blank">Connexion</a>
-        </li>
-      <?php
-      }
-      ?>
+      <li>
+      <button onclick="openNav2()" class="identification">Connexion</button>
+      </li>
+    <?php
+    }
+    ?>
     </ul>
 
   </header>
+
+
