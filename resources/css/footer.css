@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0 auto;
     background-color: rgb(116, 113, 108);
-    position: absolute;
+    position: static;
     height: 60px;
     /*display: table-row;*/
     bottom: 0;
@@ -14,8 +14,44 @@
     justify-content: space-around;
     align-items: center;
 }
-  
-.mail, .adresse {
-    font-size: 2.5rem;
-    color: white;
+
+.coordonnees {
+  width: 100%;
+  /*padding: 0;
+  margin: 0 auto;
+  background-color: rgb(116, 113, 108);
+  position: absolute;
+  height: 60px;
+  display: table-row;
+  bottom: 0;*/
+  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2.5rem;
+  color: white;
+}
+  @media all and (min-width:321px) and (max-width: 767px) {
+    .coordonnees {
+        font-size: 2rem;
+    }
+  }
+
+.responsabilites {
+  width: 100%;
+  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.responsabilites > a {
+text-decoration: none;
+color: white;
 }

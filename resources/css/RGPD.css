@@ -1,0 +1,65 @@
+  sectionRGPD {
+    font-size: 62.5%;
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: justify;
+    color:white;
+    max-width: 800px;
+    height: auto;
+    display:block;
+    margin-top:60px;
+  }
+
+  sectionRGPD > h1 {
+    padding: 1rem;
+    margin: 0 auto;
+    margin-top:60px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+
+  sectionRGPD > h2 {
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 2.5rem;
+  }
+
+  sectionRGPD > h3 {
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 2rem;
+  }
+
+  sectionRGPD > p {
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1.5rem;
+  }
+
+  sectionRGPD > .liste {
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1.5rem;
+    margin-left: 50px;
+  }
+
+  sectionRGPD > .trait {
+    border-top: 1px solid #000;
+    width: auto;
+  }
+
+  sectionRGPD > .ligne {
+    display: inline;
+  }
+
+  sectionRGPD > span {
+    text-decoration: underline;
+  }
+
+
+

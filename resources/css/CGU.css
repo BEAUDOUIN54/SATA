@@ -1,0 +1,67 @@
+  sectionCGU {
+    margin: 0 auto;
+    text-align: justify;
+    color:white;
+    max-width: 800px;
+    height: auto;
+    display:block;
+    margin-top:90px;
+  }
+
+  sectionCGU > h1 {
+    margin: 0 auto;
+ 
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+
+  sectionCGU > h2 {
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  sectionCGU > h3 {
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 2rem;
+  }
+
+  sectionCGU > p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  sectionCGU > .trait {
+    border-top: 1px solid #000;
+    width: auto;
+  }
+
+  sectionCGU > .trait2 {
+    border-top: 1px solid #000;
+    width: 300px;
+    margin-left: 17px;
+  }
+
+  sectionCGU > .gras {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 2rem;
+  }
+
+  sectionCGU > span {
+    text-decoration: underline;
+  }
+
+  sectionCGU > .liste {
+    padding: 2rem;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1.5rem;
+    margin-left: 50px;
+  }

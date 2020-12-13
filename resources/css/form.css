@@ -85,10 +85,7 @@
     margin-top: -3px;
   }
   
-  .privacy-policy{
-    font-size: 1.2rem;
-  }
-
+  
   .button-section10 {
     width: 180px;
     margin-left: 200px;
@@ -118,21 +115,17 @@
     box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
   }
 
-  .field {
-    color:blue;
-    font-size: 3rem;
+  .privacy-policy  {
+    color:black;
+    font-size: 1.2rem;
+    max-width: 100%;
   }
 
-
-  .field2 {
-    color:rgb(255, 0, 0);
-    font-size: 3rem;
+  .privacy-policy .field2 {
+    color:rgb(28, 39, 187);
   }
-
-
-
-  /* fin FORMULAIRE INSCRIPTION */
   
+  /* fin FORMULAIRE INSCRIPTION */
   
   formul {
     margin-top: 5px;

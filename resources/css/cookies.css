@@ -1,0 +1,63 @@
+sectionCookies {
+  font-size: 62.5%;
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: justify;
+  color:white;
+  max-width: 800px;
+  height: auto;
+  display:block;
+}
+
+sectionCookies > h1 {
+  padding: 1rem;
+  margin: 0 auto;
+  margin-top:60px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+sectionCookies > h2 {
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 2rem;
+}
+
+sectionCookies > h3 {
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+sectionCookies > p {
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1.5rem;
+    font-size: 1.5rem;
+    margin-left: 50px;
+}
+
+sectionCookies > .trait {
+  border-top: 1px solid #000;
+  width: auto;
+}
+
+sectionCookies > span {
+  text-decoration: underline;
+}
+
+sectionCookies > ul {
+  padding: 1rem;
+  margin: 0 auto;
+  margin-left: 50px;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+sectionCookies > a {
+    color:rgb(103, 115, 184);
+}
