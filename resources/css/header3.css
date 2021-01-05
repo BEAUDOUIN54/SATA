@@ -1,0 +1,167 @@
+/* début NAVBAR */
+
+.header {
+  background-color: rgb(116, 113, 108);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  min-height: 60px;
+  padding: 0;
+  margin: 0;
+  z-index: 100;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width:30%;
+  margin-right: 5%;
+  height: 35px;
+  margin-top: 13px;
+}
+@media all and (max-width: 980px) {
+  .header ul {
+    font-size: 1.5rem;
+    width: 45%;
+    height:60%;
+  }
+}
+@media all and (max-width: 700px) {
+  .header ul {
+    font-size: 1.5rem;
+    width: 70%;
+    height:60%;
+  }
+}
+@media all and (max-width: 400px) {
+  .header ul {
+    font-size: 1.5rem;
+    width: 80%;
+    height:60%;
+  }
+}
+
+.logo {
+display: block;
+float: left;
+margin-left:50px;
+margin-top:10px;
+}
+
+/* Début MENU */
+.header .menu {
+clear: both;
+max-height: 0;
+transition: max-height .2s ease-out;
+}
+
+/* menu icone */
+.header .menu-icon {
+cursor: pointer;
+float: right;
+padding: 28px 20px;
+position: relative;
+user-select: none;    
+}
+.header .menu-icon .navicon {
+background: white;
+display: block;
+height: 2px;
+position: relative;
+transition: background .2s ease-out;
+width: 18px;
+}
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+background: white;
+content: '';
+display: block;
+height: 100%;
+position: absolute;
+transition: all .2s ease-out;
+width: 100%; 
+}
+.header .menu-icon .navicon:before {
+top: 5px;
+}
+.header .menu-icon .navicon:after {
+top: -5px;
+}
+
+/* menu bouton */
+.header .menu-btn {
+display: none;
+}
+.header .menu-btn:checked ~ .menu {
+max-height: 240px;
+}
+.header .menu-btn:checked ~ .menu-icon .navicon {
+background: transparent;
+}
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+transform: rotate(-45deg);
+}
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+transform: rotate(45deg);
+}
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+top: 0;    color: white;
+}
+
+/* Apparition burger menu */
+@media (min-width: 800px) {
+.header li {
+  float: left;
+}
+
+.header .menu {
+  clear: none;
+  float: right;
+  max-height: none;
+}
+.header .menu-icon {
+  display: none;
+}
+}
+/* Fin MENU */
+
+.identification {
+width: 135%;
+height:70%;
+display: flex;
+flex-wrap: nowrap;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+background-color: white;
+color:black;
+border-radius: 50px;
+border-style: ridge;
+border-color: rgb(106, 102, 103);
+font-size: 1.5rem;
+}
+
+.identification:hover {
+background-color: rgb(106, 102, 103);
+color:white;
+}
+
+
+
+
+
+
+
+
+
+

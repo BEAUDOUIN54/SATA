@@ -93,7 +93,7 @@ body {
     height:140px;
     position:absolute;
     left:11.8%;
-    top:72.5%;
+    top:72%;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -140,31 +140,9 @@ body {
     }
   }
 
-  .silhouette {
-    position:absolute;
-    left:52%;
-    top:48%;
-    height: 52%;
-    width:auto;
-    z-index: 10;
-  }
-  @media all and (max-width: 1024px) {
-    .silhouette {
-      max-height: 260px;
-      top:49%;
-    }
-  }
-  @media all and (min-width:768px) and (max-width: 991px) {
-    .silhouette {
-      max-height: 250px;
-      top:48%;
-    }
-  }
-  @media all and (min-width:321px) and (max-width: 767px) {
-    .silhouette {
-      max-height: 200px;
-      top:50%;
-    }
-  }
 
 
+
+
+
+  

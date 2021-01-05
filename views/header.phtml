@@ -11,15 +11,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Snowburst+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="../resources/css/style.css" />
-  <link rel="stylesheet" href="../resources/css/header.css" />
-  <link rel="stylesheet" href="../resources/css/footer.css" />
-  <link rel="stylesheet" href="../resources/css/dashboardUser.css" />
-  <link rel="stylesheet" href="../resources/css/form.css" />
-  <link rel="stylesheet" href="../resources/css/sidePanel.css" />
   <link rel="stylesheet" href="../resources/css/CGU.css" />
   <link rel="stylesheet" href="../resources/css/cookies.css" />
   <link rel="stylesheet" href="../resources/css/RGPD.css" />
+  <link rel="stylesheet" href="../resources/css/dashboardUser.css" />
+  <link rel="stylesheet" href="../resources/css/form.css" />
+  <link rel="stylesheet" href="../resources/css/sidePanel.css" />
+  <link rel="stylesheet" href="../resources/css/RDV.css" />
+  <link rel="stylesheet" href="../resources/css/header.css" />
+  <link rel="stylesheet" href="../resources/css/footer.css" />
+  <link rel="stylesheet" href="../resources/css/style.css" />
   <title>SATA SARL Lunéville</title>
 
  
@@ -39,12 +40,10 @@
 
   <header class="header">
 
- 
     <div><a href="../controllers/home.php"><img src="../resources/img/logo4.png" class="logo" alt="logo" title="logo"></a></div>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 
-  
     <ul class="menu">
     <?php
     if (!isset($_SESSION['identification'])) {

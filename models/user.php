@@ -33,6 +33,10 @@ $sth->execute();
 }
 
 
+
+
+
+
 //	Récupère un utilisateur via son adresse électronique
 function getUserByEmail(string $username): ?array
 {
@@ -51,3 +55,61 @@ require '../controllers/database.php';
     // ternaire, 1ère partie = condition, 2ème = si vrai ($user), 3ème = si faux (null)
     return ($user !==false) ? $user : null;
 }   
+
+
+
+
+
+
+
+//	Ajoute un événement au calendrier
+function addEvent(string $date, string $start, string $title, string $comment): void
+{
+//	Connexion à la base de données
+require '../controllers/database.php';
+    
+//	Ajout de l'événement
+$query = 'INSERT INTO events (date, start, title, comment) VALUES (:date, :start, :title, :comment)';
+$sth = $dbh->prepare($query);
+$sth->bindValue(':date', trim($date), PDO::PARAM_STR);
+$sth->bindValue(':start', trim($start), PDO::PARAM_STR);
+$sth->bindValue(':title', trim($title), PDO::PARAM_STR);
+$sth->bindValue(':comment', trim($comment), PDO::PARAM_STR);
+$sth->execute();
+}
+
+
+
+
+/*
+require '../controllers/database.php';
+$date = DateTime::createFromFormat('d/m/Y', $_POST['date']);
+$sth = $dbh->prepare('INSERT INTO events (:date, :start, :title, :comment)'); // $db étant une instance de PDO
+$sth->bindValue(':date', $date->format('Y-m-d'), PDO::PARAM_STR);
+$sth->bindValue(':date', trim($date), PDO::PARAM_STR);
+$sth->bindValue(':start', trim($start), PDO::PARAM_STR);
+$sth->bindValue(':title', trim($title), PDO::PARAM_STR);
+$sth->bindValue(':comment', trim($comment), PDO::PARAM_STR);
+$sth->execute();
+
+
+
+
+
+
+//	Ajoute un événement au calendrier
+
+function addEvent(string $date, string $start, string $title, string $comment): void
+{
+//	Connexion à la base de données
+require '../controllers/database.php';
+$date = DateTime::createFromFormat('d/m/Y', $_POST['date']);
+//	Ajout de l'événement
+$query = 'INSERT INTO events (date, start, title, comment) VALUES (:date, :start, :title, :comment)';
+$sth = $dbh->prepare($query);
+$sth->bindValue(':date', $date->format('Y-m-d'), PDO::PARAM_STR);
+$sth->bindValue(':start', trim($start), PDO::PARAM_STR);
+$sth->bindValue(':title', trim($title), PDO::PARAM_STR);
+$sth->bindValue(':comment', trim($comment), PDO::PARAM_STR);
+$sth->execute();
+}*/

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Snowburst+One&display=swap" rel="stylesheet">
+
+ 
+    <link rel="stylesheet" href="../resources/css/header3.css" />
+    <link rel="stylesheet" href="../resources/css/page2.css" />
+    <title>SATA SARL Lunéville</title>
+</head>
+
+
+    <header class="header3">
+
+    <div><a href="../controllers/home.php"><img src="../resources/img/logo4.png" class="logo" alt="logo" title="logo"></a></div>
+
+<!--        <div class="search">
+          <div>Que recherchez-vous ?</div>
+          <input class="input"></input>
+          <a href="../controllers/connexion.php"><i class="fas fa-search"></a></i>
+        </div>
+-->
+
+        <?php
+        if (isset($_SESSION['identification'])) {
+        ?>
+            <div class="deconnexion">
+                <a href="../controllers/signOut.php" target="_blank" class="text">Déconnexion</a>
+            </div>
+           
+        <?php
+        }
+        ?>
+
+    </header>
+
+
+    
+
+
+    

@@ -1,0 +1,38 @@
+<?php require '../views/header.phtml'; ?>
+
+
+  <body>
+  <formul3 class="form-style-3">
+    <h1>Prendre un rendez-vous</h1>
+    <h3>(vous devez être connecté)</h3>
+      <form action="../controllers/RDV.php" method="POST">
+          <div class="section"><span>1</span>Jour</div>
+          <div class="inner-wrap">
+              <label><input type="date" name="date" required></label>
+          </div>
+          <div class="section"><span>2</span>Heure de début</div>
+              <div class="inner-wrap">
+              <label><input type="time" name="start" required/></label>
+          </div>
+
+          <div class="section"><span>3</span>Motif du rdv</div>
+          <div class="inner-wrap">   
+            <select name="title" required>
+                <option value="">--Choisissez un motif--</option>
+                <option value="Depannage">Dépannage informatique</option>
+                <option value="Pose">Pose d'alarme</option>
+                <option value="Autre">Autre</option>
+            </select>
+          </div>
+
+          <div class="section"><span>4</span>Commentaire (facultatif)</div>
+              <div class="inner-wrap">
+              <textarea input type="comment" name="comment"></textarea>
+          </div>
+          <div class="button-section3">
+          <input type="submit" name="RDV" />
+          </div>
+      </form>
+  </formul3>
+
+</html>
