@@ -113,3 +113,8 @@ strong {
     p {
         font-size: 1.3rem;
     }
+
+    .text {
+        text-decoration:none;
+        color:white;
+    }
