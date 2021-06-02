@@ -15,103 +15,63 @@
     color: rgb(16, 3, 128);
     font-size: 3rem;
   }
+/* fin DASHBOARDUSER */
+
+.button {
+  width: 280px;
+  margin-right: 20px;
+  margin-top: -220px;
+  background: #2a88ad;
+  padding: 8px 20px 8px 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+  font: "Bitter", serif;
+  -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+  -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+  box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+  border: 1px solid #257c9e;
+  font-size: 2rem;
+}
+.button:hover {
+  background: #2a6881;
+  -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+  -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+  box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+}
+
+.button2 {
+  width: 180px;
+  margin-right: 20px;
+  margin-top: -220px;
+  background: #ad492a;
+  padding: 8px 20px 8px 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+  font: "Bitter", serif;
+  -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+  -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+  box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+  border: 1px solid #ad492a;
+  font-size: 2rem;
+}
+.button2:hover {
+  background: #bd411c;
+  -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+  -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+  box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+}
   
-  .fiche {
-    border: solid black 2px;
-    background-color: aliceblue;
-    margin-top: 20px;
-    margin: 2rem auto;
-    width: 40%;
-    height: auto;
-    border-radius: 10px / 10px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-    /*position: relative;*/
-    font-family: "Quando", serif;
-    line-height: 25px;
-    font-size: 1.5rem;
-    word-wrap: break-word;
-  }
-  
-  @media all and (max-width: 840px) {
-    .fiche {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-  
-  .vignetteproduit {
-    height: 200px;
-    width: auto;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: 30px;
-  }
-  
-  .titreproduit {
-    font-family: "Quando", serif;
-    font-size: 2rem;
-    margin-top: 20px;
-  }
-  
-  .prix {
-    font-size: 1.7rem;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .bouton {
-    margin-bottom: 10px;
-    display: block;
-    /*éléments block :
-    h1..., div, p, section, header, footer 
-    
-    éléments inline :
-    img, span, a, button*/
-    width: 120px;
-    height: 30px;
-    background-color: rgb(250, 136, 43);
-    border-radius: 10px;
-  }
-  
-  .bouton a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .bouton:hover {
-    opacity: 0.7;
-    animation: ease voile 1s;
-    transform: scale(1.1, 1.1);
-  }
-  
-  /* début LIEN AJOUT PRODUIT */
-  .ajoutProduit {
-    margin: 0 auto;
-    margin-top: 20px;
-    max-width: 380px;
-    height: 100px;
-    border-radius: 30px / 30px;
-    background-size: cover;
-    border: solid black 1px;
-    background-color: aliceblue;
-    line-height: 20px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 40px;
-    font-family: "Quando", serif;
-    font-size: 1.5rem;
-    width: 320px;
-  }
-  /* fin LIEN AJOUT PRODUIT */
-  /* fin DASHBOARDUSER */
-  
+.flex {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right:510px;
+  margin-top:510px;
+}

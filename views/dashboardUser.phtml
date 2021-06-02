@@ -1,6 +1,3 @@
-
-
-
 <?php require '../views/header2.phtml'; ?>
 
 <div>
@@ -12,32 +9,12 @@
     </div>
 </div>
 
-<!--
-<main>
-    <?php if (count($ads) > 0) : ?>
-        <?php foreach ($ads as $ad) : ?>
-            <div class="fiche">
-                <span><img src="../resources/uploads/<?= htmlspecialchars($ad['imageFilename']) ?>" class="vignetteproduit" alt=""></span>
-                <span class="titreproduit"><?= htmlspecialchars($ad['titre']) ?></span>
-                <br />
-                <span class="contenuproduit"><?= htmlspecialchars($ad['contenu']) ?></span>
-                <span class="datepubli"><?= htmlspecialchars($ad['datePublication']) ?></span>
-                <span class="prix">prix : <?php echo htmlspecialchars($ad['prix']) ?> euros</span>
-                
-                <span class="date"><a href="delete.php?id=<?php echo intval($ad['id'])?>"><i class="fas fa-trash-alt"></i></a></span>
 
-                <button class="bouton"><a href="formEdit.php?id=<?php echo intval($ad['id'])?>" target="_blank">Modifier</a></button>
-            </div> 
-        <?php endforeach; ?>
-
-    <?php else : ?>
-        <p>Aucun produit dans la base de données</p>
-    <?php endif; ?>
-
-    <div class="ajoutProduit"><br />
-        <h2>Vous souhaitez ajouter un produit ?</h2>
-        <br>
-        <button type="submit" class="bouton"><a href="../controllers/ajoutArticle.php" target="_blank">Nouveau produit</a></button>
-    </div>
-</main>
-    -->
+<div class="flex">
+<div>
+<a href="../controllers/agenda.php"><button class="button">Vous souhaitez prendre un rendez-vous ?</button></a>
+</div>
+<div>
+    <a href="../controllers/home.php"><button class="button2">Retour à l'accueil</button></a>
+</div>
+</div>

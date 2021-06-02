@@ -14,7 +14,7 @@
     /*height: 420px;*/
     width: 350px;
     padding: 30px;
-    margin: 100px auto;
+    /*margin: 100px auto;*/
     background: #fff;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -38,7 +38,7 @@
     -moz-border-radius: 10px 10px 0 0;
     color: #fff;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
-    font: normal 2.5rem "Bitter", serif;
+    font: normal 1.5rem "Bitter", serif;
     -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
     -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
     box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
@@ -46,7 +46,7 @@
     text-align: center;
   }
   .form-style-3 h3 {
-    font: normal 1.5rem "Bitter", serif;
+    font: normal 1rem "Bitter", serif;
     text-align: center;
   }
   /*.form-style-3 h1 > span{
@@ -87,7 +87,7 @@
   }
   
   .form-style-3 .section {
-    font: normal 1.5rem "Bitter", serif;
+    font: normal 1rem "Bitter", serif;
     color: #2a88ad;
     margin-bottom: 5px;
     margin-top: 30px;
@@ -135,7 +135,7 @@
     -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
     box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
     border: 1px solid #257c9e;
-    font-size: 1.8rem;
+    /*font-size: 1.8rem;*/
   }
   .form-style-3 input[type="button"]:hover,
   .form-style-3 input[type="submit"]:hover {

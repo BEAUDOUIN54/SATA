@@ -33,9 +33,18 @@
   font-size: 2.5rem;
   color: white;
 }
-  @media all and (min-width:321px) and (max-width: 767px) {
+@media all and (min-width:992px) and (max-width: 1024px) {
+  .coordonnees {
+      font-size: 2rem;
+  }
+}@media all and (min-width:800px) and (max-width: 991px) {
+  .coordonnees {
+      font-size: 2rem;
+  }
+}
+  @media all and (min-width:321px) and (max-width: 799px) {
     .coordonnees {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
   }
 
@@ -50,7 +59,11 @@
   font-size: 1.5rem;
   color: white;
 }
-
+@media all and (min-width:321px) and (max-width: 799px) {
+  .responsabilites {
+      font-size: 1rem;
+  }
+}
 .responsabilites > a {
 text-decoration: none;
 color: white;

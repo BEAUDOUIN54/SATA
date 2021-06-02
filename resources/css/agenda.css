@@ -1,0 +1,125 @@
+@media all and (max-width: 1150px) {
+    #bloc_page {
+      width: auto;
+    }
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box; box-sizing: border-box;
+  }
+  
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+      font-size: 12px;
+    }
+  
+    #calendar {
+      max-width: 700px;
+      margin: 70px auto;
+      padding: 0 10px;
+    }
+  
+    .button {
+      width: 280px;
+      margin-right: 20px;
+      margin-top: -220px;
+      background: #2a88ad;
+      padding: 8px 20px 8px 20px;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+      font: "Bitter", serif;
+      -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+      -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+      box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+      border: 1px solid #257c9e;
+      font-size: 1rem;
+    }
+    .button:hover {
+      background: #2a6881;
+      -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+      -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+      box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+    }
+
+    .button2 {
+      width: 180px;
+      margin-right: 20px;
+      margin-top: -220px;
+      background: #ad492a;
+      padding: 8px 20px 8px 20px;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+      font: "Bitter", serif;
+      -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+      -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+      box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+      border: 1px solid #ad492a;
+      font-size: 1rem;
+    }
+    .button2:hover {
+      background: #bd411c;
+      -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+      -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+      box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+    }
+
+  /* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 100; 
+  top: 0;
+  left: 0;
+  background-color: #111; 
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 100px; 
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  text-decoration: none;
+  color: #818181;
+ /* display: block;*/
+  transition: 0.3s;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 80px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.flex {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right:510px;
+}

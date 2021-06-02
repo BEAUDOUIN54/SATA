@@ -1,22 +1,5 @@
 <?php
 
-//	Récupère un utilisateur
-function getUsername($userId)
-{
-//	Connexion à la base de données
-require '../controllers/database.php';
-    
-//	Récupération du pseudo de l'utilisateur enregistré
-$query = 'SELECT username from user WHERE id = :id';
-
-$sth = $dbh->prepare($query);
-$sth->bindValue(':id', $userId, PDO::PARAM_INT);
-$sth->execute();
-$username = $sth->fetch();
-return $username;
-}
-
-
 //	Ajoute un utilisateur
 function addUser(string $email, string $username, string $password): void
 {
@@ -33,8 +16,21 @@ $sth->execute();
 }
 
 
+//	Récupère un utilisateur
+function getUsername($userId)
+{
+//	Connexion à la base de données
+require '../controllers/database.php';
+    
+//	Récupération du pseudo de l'utilisateur enregistré
+$query = 'SELECT username from user WHERE id = :id';
 
-
+$sth = $dbh->prepare($query);
+$sth->bindValue(':id', $userId, PDO::PARAM_INT);
+$sth->execute();
+$username = $sth->fetch();
+return $username;
+}
 
 
 //	Récupère un utilisateur via son adresse électronique
@@ -55,11 +51,6 @@ require '../controllers/database.php';
     // ternaire, 1ère partie = condition, 2ème = si vrai ($user), 3ème = si faux (null)
     return ($user !==false) ? $user : null;
 }   
-
-
-
-
-
 
 
 //	Ajoute un événement au calendrier
@@ -91,9 +82,6 @@ $sth->bindValue(':start', trim($start), PDO::PARAM_STR);
 $sth->bindValue(':title', trim($title), PDO::PARAM_STR);
 $sth->bindValue(':comment', trim($comment), PDO::PARAM_STR);
 $sth->execute();
-
-
-
 
 
 

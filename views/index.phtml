@@ -3,92 +3,98 @@
   <body>
     <section id="main">
 
-
-    <div id="mySidebar" class="sidebar">
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-<formul class="form-style-10">
-    <h1>Inscription</h1>
-    <form action="../controllers/signUp.php" method="POST">
+<!-- Formulaire d'inscription -->
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <formul class="form-style-10">
+          <h1>Inscription</h1>
+            <form action="../controllers/signUp.php" method="POST">
      
-      <div class="section"><span>1</span>Email</div>
-      <div class="inner-wrap">
-        <label>Votre Email<input type="email" name="email" value="<?php echo isset($_GET['email'])?$_GET['email']:'' ?>" required /></label>
-      </div>
+              <div class="section"><span>1</span>Email</div>
+                <div class="inner-wrap">
+                  <label>Votre Email<input type="email" name="email" value="<?php echo isset($_GET['email'])?$_GET['email']:'' ?>" required /></label>
+                </div>
 
-      <div class="section"><span>2</span>Pseudo</div>
-      <div class="inner-wrap">
-        <label>Votre Pseudo <input type="text" name="pseudo" value="<?php echo isset($_GET['pseudo'])?$_GET['pseudo']:'' ?>" required></input></label>
-      </div>
+              <div class="section"><span>2</span>Pseudo</div>
+                <div class="inner-wrap">
+                  <label>Votre Pseudo <input type="text" name="pseudo" value="<?php echo isset($_GET['pseudo'])?$_GET['pseudo']:'' ?>" required></input></label>
+                </div>
 
-      <div class="section"><span>3</span>Mot de passe</div>
-      <?php if (isset($_GET['error']) && $_GET['error'] == 'passwordmatch'){ ?>
-        <script>alert ('Les mots de passe ne correspondent pas');</script>
-      <?php } ?>
-      <div class="inner-wrap">
-        <label>Votre mot de passe <input type="password" name="password" required /></label>
-        <label>Confirmez votre mot de passe <input type="password" name="passwordconfirm" required /></label>
-      </div>
+              <div class="section"><span>3</span>Mot de passe</div>
+                <?php if (isset($_GET['error']) && $_GET['error'] == 'passwordmatch'){ ?>
+                <script>alert ('Les mots de passe ne correspondent pas');</script>
+                <?php } ?>
+                  <div class="inner-wrap">
+                    <label>Votre mot de passe <input type="password" name="password" required /></label>
+                    <label>Confirmez votre mot de passe <input type="password" name="passwordconfirm" required /></label>
+                  </div>
 
-      <span class="privacy-policy">
-        <input type="checkbox" name="field7" class="field"/>&emsp;J'accepte les <a href="../controllers/CGU.php" class="field2">Conditions Générales d'Utilisation</a> et <a href="../controllers/cookies.php" class="field2">l'utilisation des cookies</a>
-      </span>
-
+              <span class="privacy-policy">
+                <input type="checkbox" name="field7" class="field"/>&emsp;J'accepte les <a href="../controllers/CGU.php" class="field2">Conditions Générales d'Utilisation</a> et <a href="../controllers/cookies.php" class="field2">l'utilisation des cookies</a>
+              </span>
 <br><br><br><br>
-      <div class="button-section10">
-        <input type="submit" name="signUp" />
+              <div class="button-section10">
+                <input type="submit" name="signUp" />
+              </div>
+            </form>
+          </formul>
       </div>
-    </form>
-</formul>
-</div>
 
-
-
-<div id="mySidebar2" class="sidebar">
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
-  <formul1 class="form-style-1">
-    <h1>Connexion</h1>
-      <form action="../controllers/signIn.php" method="POST">
-          <div class="section"><span>1</span>Pseudo</div>
-          <div class="inner-wrap">
+<!-- Formulaire de connexion -->
+      <div id="mySidebar2" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+        <formul1 class="form-style-1">
+        <h1>Connexion</h1>
+          <form action="../controllers/signIn.php" method="POST">
+            <div class="section"><span>1</span>Pseudo</div>
+            <div class="inner-wrap">
               <label>Votre Pseudo<input type="pseudo" name="username" required></label>
-          </div>
-          <div class="section"><span>2</span>Mot de passe</div>
+            </div>
+            <div class="section"><span>2</span>Mot de passe</div>
               <div class="inner-wrap">
               <label>Votre mot de passe<input type="password" name="password" required/></label>
-          </div>
-          <div class="button-section">
-          <input type="submit" name="SignIn" />
-          </div>
-      </form>
-  </formul1>
-</div>
-
-    <div class="wrap">
-    <div><a href="../controllers/page2.php">
-    <img src="../resources/img/devanture.jpg" class="devanture" alt="cliquer sur la silhouette pour entrer" title="devanture">
-
-    </a></div>
-
-
-      <div><iframe class="video" src="https://www.youtube.com/embed/7uWLTCjSozc?list=PLdVIHOet5WuPUl-X8UeEBApJs64dywFP?autoplay=1&loop=1&autopause=0&background=1O" frameborder="0" 
-        controls muted autoplay preload="auto" allow="accelerometer; loop; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen></iframe></div>
+            </div>
+            <div class="button-section">
+            <input type="submit" name="SignIn" />
+            </div>
+          </form>
+        </formul1>
       </div>
-    
 
+<!-- Vitrine d'accueil -->
+      <div class="wrap">
+        <div><a href="../controllers/page2.php">
+          <img src="../resources/img/devanture6.jpg" class="devanture" alt="cliquer sur la silhouette pour entrer" title="cliquer sur la silhouette pour entrer" >
+        </a>
+        </div>
+   
+      <img class="showOnMobile" src="../resources/img/devanture7.jpg"/>
 
+        <div><iframe class="video" src="https://www.youtube.com/embed/7uWLTCjSozc?list=PLdVIHOet5WuPUl-X8UeEBApJs64dywFP?autoplay=1&loop=1&autopause=0&background=1O" frameborder="0" 
+          controls muted autoplay preload="auto" allow="accelerometer; loop; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+        </div>
+      </div>
 
-
-    <div class="description">
-        <p class="h3">RISCO Group</p>
-        <br/>
-        <p class="agility">Agility 3</p>
-        <br/>
-        <p class="texte">Un système de sécurité sans fil pour protéger votre famille et vos biens.</p>
-    </div>
- 	
-    
     </section>
+
+<!-- Popup cookies -->
+    <div id="overlay" class="overlay">
+      <div class="popup">
+        <h2>Notre politique de cookies</h2><br/>
+          <div>
+            Notre  site utilise des cookies ou technologies similaires pour stocker et accéder à vos informations personnelles, comme pour retenir votre visite et vos choix.
+            Vous pouvez retirer votre consentement en cliquant sur "Continuer sans accepter" et dans ce cas vous n'aurez plus accès à du contenu personnalisé basé sur votre navigation.
+            En cliquant sur 'Accepter et fermer', vous consentez aux finalités ci-dessus conformément à notre politique de Cookies et de Données personnelles.     
+          </div>
+<br/><br/>
+          <div class=boutonsCookies>
+            <button class=cookies>Accepter et fermer</button>
+            <button class=noCookies>Continuer sans accepter</button>
+          </div>
+      </div>
+    </div>
+
 
 
 

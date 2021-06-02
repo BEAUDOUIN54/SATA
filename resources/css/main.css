@@ -1,10 +1,6 @@
 
 /* classes attached to <body> */
 
-
-
-
-
 .fc-not-allowed,
 .fc-not-allowed .fc-event { /* override events' custom cursors */
   cursor: not-allowed;
@@ -22,7 +18,6 @@
   /* layout of immediate children */
   display: flex;
   flex-direction: column;
-
   font-size: 1em
 }
 .fc,

@@ -12,9 +12,8 @@ if (!empty($_POST)) {
         header('Location: home.php');
     }
     else {
-        header('Location: signUp.php?error=passwordmatch&pseudo='. $_POST['pseudo'].'email='.$_POST['email']);
+        header('Location: signUp.php?error=passwordmatch&pseudo='. $_POST['pseudo'],'email='.$_POST['email']);
     }
-
     exit;
 }
 

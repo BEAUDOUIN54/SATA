@@ -1,4 +1,4 @@
-//auto expand textarea signIn
+//auto expand textarea signUp
 function adjust_textarea(h) {
   h.style.height = "20px";
   h.style.height = (h.scrollHeight)+"px";
@@ -17,7 +17,7 @@ document.getElementById("collapse").style.marginLeft = "0";
 }
 
 
-//auto expand textarea signUp
+//auto expand textarea signIn
 function adjust_textarea(h) {
   h.style.height = "20px";
   h.style.height = (h.scrollHeight)+"px";
