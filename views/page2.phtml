@@ -1,50 +1,49 @@
-<link rel="stylesheet" href="../resources/css/header3.css" />
-<link rel="stylesheet" href="../resources/css/page2.css" />
+<?php require '../views/header.phtml'; ?>
 
   <body>
+    <section id="sect">
+  <div class="container">
+    <input type="radio" name="slider" id="item-1" checked>
+    <input type="radio" name="slider" id="item-2">
+    <input type="radio" name="slider" id="item-3">
+    <input type="radio" name="slider" id="item-4">
+    <input type="radio" name="slider" id="item-5">
 
-<div class="bg"></div>
-<div class="bg2"></div>
 
-<div class="container">
-  <div id="left">
-    <h1>Agence SATA Lunéville</h1>
-    <p>Vous souhaitez prendre un rendez-vous ?<br/>Connaître les produits en stock ?<br/>Une question particulière ? </p>
-    <div>
-    <a href="../controllers/home.php"><button onclick="openNav2()" class="button2">Retour à l'accueil</button></a>
-    </div>
+    
+  <div class="cards">
+    <label class="card" for="item-1" id="photo-1">
+      <img src="../resources/img/interieur.jpg" class="photo" alt="intérieur">
+    </label>
+    <label class="card" for="item-2" id="photo-2">
+      <img src="../resources/img/20170511_181345.jpg" class="photo" alt="">
+    </label>
+    <label class="card" for="item-3" id="photo-3">
+      <img src="../resources/img/20170511_181403.jpg" class="photo" alt="">
+    </label>
+
+
+
+
+
+
+    <label class="card" for="item-4" id="photo-4">
+      <img src="../resources/img/20170511_181430.jpg" class="photo" alt="">
+    </label>
+    <label class="card" for="item-5" id="photo-5">
+      <img src="../resources/img/Show-room.jpg" class="photo" alt="show-romm alarmes">
+    </label>
+
+
   </div>
 
-  <div id="right">
-    <ul>
-      <li> 
-        <img src="../resources/img/logo4.png" class="logo1" alt="logo" title="logo">
-        <span>
-          <a href="../controllers/agenda.php" target="_blank" class="text"><strong>Prendre un rendez-vous</strong></a>
-        </span>
-      </li>
+</div> 
+   
 
-      <li> 
-      <img src="../resources/img/logo4.png" class="logo1" alt="logo" title="logo">
-        <span>
-          <strong>Produits en stock</strong>
-        </span>
-      </li>
 
-      <li> 
-        <img src="../resources/img/logo4.png" class="logo1" alt="logo" title="logo">
-        <span>
-          <strong>Une question ?</strong>
-        </span>
-      </li>
-    </ul>
-  </div>
-</div>
-
-  </body>
+</section>
 
 
 
-
-
+<?php require '../views/footer.phtml'; ?>
 

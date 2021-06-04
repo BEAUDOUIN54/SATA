@@ -64,11 +64,9 @@
 <!-- Vitrine d'accueil -->
       <div class="wrap">
         <div><a href="../controllers/page2.php">
-          <img src="../resources/img/devanture6.jpg" class="devanture" alt="cliquer sur la silhouette pour entrer" title="cliquer sur la silhouette pour entrer" >
-        </a>
+          <img src="../resources/img/devanture6.jpg" class="devanture" alt="cliquer sur la silhouette pour entrer" title="cliquer sur la silhouette pour entrer"/>
+            </a>
         </div>
-   
-      <img class="showOnMobile" src="../resources/img/devanture7.jpg"/>
 
         <div><iframe class="video" src="https://www.youtube.com/embed/7uWLTCjSozc?list=PLdVIHOet5WuPUl-X8UeEBApJs64dywFP?autoplay=1&loop=1&autopause=0&background=1O" frameborder="0" 
           controls muted autoplay preload="auto" allow="accelerometer; loop; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -76,26 +74,46 @@
         </div>
       </div>
 
-    </section>
+      <div class="decoupage">
+        <a href="../controllers/page2.php">
+          <img class="showOnMobile" src="../resources/img/devanture7.jpg"/>
+        </a>
+          <img class="showOnMobile2" src="../resources/img/videoMobile.jpg"/>
+        <iframe class="videob" src="https://www.youtube.com/embed/7uWLTCjSozc?list=PLdVIHOet5WuPUl-X8UeEBApJs64dywFP?autoplay=1&loop=1&autopause=0&background=1O" frameborder="0" 
+          controls muted autoplay preload="auto" allow="accelerometer; loop; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+      </div>
 
 <!-- Popup cookies -->
-    <div id="overlay" class="overlay">
-      <div class="popup">
-        <h2>Notre politique de cookies</h2><br/>
-          <div>
-            Notre  site utilise des cookies ou technologies similaires pour stocker et accéder à vos informations personnelles, comme pour retenir votre visite et vos choix.
-            Vous pouvez retirer votre consentement en cliquant sur "Continuer sans accepter" et dans ce cas vous n'aurez plus accès à du contenu personnalisé basé sur votre navigation.
-            En cliquant sur 'Accepter et fermer', vous consentez aux finalités ci-dessus conformément à notre politique de Cookies et de Données personnelles.     
-          </div>
-<br/><br/>
-          <div class=boutonsCookies>
-            <button class=cookies>Accepter et fermer</button>
-            <button class=noCookies>Continuer sans accepter</button>
-          </div>
+      <?php
+        if (!isset($_SESSION["start"])){
+      ?>
+
+      <div id="overlay" class="overlay">
+        <div class="popup">
+          <h2>Notre politique de cookies</h2><br/>
+            <div>
+              Notre  site utilise des cookies ou technologies similaires pour stocker et accéder à vos informations personnelles, comme pour retenir votre visite et vos choix.
+              Vous pouvez retirer votre consentement en cliquant sur "Continuer sans accepter" et dans ce cas vous n'aurez plus accès à du contenu personnalisé basé sur votre navigation.
+              En cliquant sur 'Accepter et fermer', vous consentez aux finalités ci-dessus conformément à notre politique de Cookies et de Données personnelles.     
+            </div>
+      <br/><br/>
+            <div class=boutonsCookies><form action="../controllers/acceptCookie.php">
+              <a href="javascript:void(0)" onclick="closeCookies()">
+                <button class=cookies type="submit" >Accepter et fermer</button>
+              </a>
+              <a href="javascript:void(0)" onclick="closeCookies()">
+                <button class=noCookies>Continuer sans accepter</button>
+              </a>
+              </form>
+            </div>
+        </div>
       </div>
-    </div>
 
-
+      <?php
+        }
+      ?>
+    </section>
 
 
 <?php require '../views/footer.phtml'; ?>
